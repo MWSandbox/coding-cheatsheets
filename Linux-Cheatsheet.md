@@ -6,8 +6,8 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Package Manager](#package-manager)
-- [General](#general)
+- [Linux Package Manager](#linux-package-manager)
+- [General Linux commands](#general-linux-commands)
 - [VI](#vi)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

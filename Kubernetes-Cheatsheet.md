@@ -5,7 +5,7 @@
 **Table of Contents**
 
 - [kubectl](#kubectl)
-- [Azure](#azure)
+- [Azure kubelogin](#azure-kubelogin)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

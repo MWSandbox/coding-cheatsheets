@@ -6,11 +6,10 @@ My personal cheatsheet when working with AWS. Feel free to reuse and adjust it t
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-1. [AWS Cheatsheet](#aws-cheatsheet)
-2. [CDK CLI](#cdk-cli)
-3. [AWS CLI](#aws-cli)
-4. [Payara App Server](#payara-app-server)
-5. [Other AWS Commands](#other-aws-commands)
+- [CDK CLI](#cdk-cli)
+- [AWS CLI](#aws-cli)
+- [Payara App Server](#payara-app-server)
+- [Other AWS Commands](#other-aws-commands)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
