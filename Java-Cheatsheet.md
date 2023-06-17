@@ -1,4 +1,4 @@
-# Cloud Cheatsheet
+# Java Cheatsheet
 
 My personal cheatsheet when programming Java projects. Feel free to reuse and adjust it to your needs.
 
@@ -6,8 +6,9 @@ My personal cheatsheet when programming Java projects. Feel free to reuse and ad
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Maven](#maven)
-- [Payara](#payara)
+1. [Java Cheatsheet](#java-cheatsheet)
+2. [Maven](#maven)
+3. [Payara](#payara)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
