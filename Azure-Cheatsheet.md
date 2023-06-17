@@ -1,6 +1,14 @@
-# Azure Cheatsheet <!-- omit in toc -->
+# Azure Cheatsheet
 
 My personal cheatsheet when working with Azure. Feel free to reuse and adjust it to your needs.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Azure CLI](#azure-cli)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Azure CLI
 

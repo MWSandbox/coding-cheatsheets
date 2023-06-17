@@ -1,7 +1,13 @@
-# Kubernetes Cheatsheet <!-- omit in toc -->
+# Kubernetes Cheatsheet
 
-1. [kubectl](#kubectl)
-2. [Azure](#azure)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [kubectl](#kubectl)
+- [Azure](#azure)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # kubectl
 
@@ -13,7 +19,7 @@
 | Check permissions                                        | `kubectl auth can-i --list`                                  |
 | Get clusterrolebinding                                   | `kubectl get clusterrolebinding [role-binding-name] -o json` |
 
-# Azure
+# Azure kubelogin
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
 | Login using Azure AD integration    | `kubelogin convert-kubeconfig -l interactive` |

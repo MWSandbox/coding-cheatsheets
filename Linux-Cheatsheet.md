@@ -1,18 +1,24 @@
-# Linux Cheatsheet <!-- omit in toc -->
+# Linux Cheatsheet
 
 My personal cheatsheet when working with Linux. Feel free to reuse and adjust it to your needs.
 
-1. [Package Manager](#package-manager)
-2. [General](#general)
-3. [VI](#vi)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-# Package Manager
+- [Package Manager](#package-manager)
+- [General](#general)
+- [VI](#vi)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# Linux Package Manager
 
 | Description                                 | Command                            |
 | :------------------------------------------ | :--------------------------------- |
 | Lists all available versions of the package | `apt-cache madison [package-name]` |
 
-# General
+# General Linux commands
 
 | Description                    | Command                                 |
 | :----------------------------- | :-------------------------------------- |

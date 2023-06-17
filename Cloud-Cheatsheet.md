@@ -1,39 +1,20 @@
-# Cloud Cheatsheet <!-- omit in toc -->
+# Cloud Cheatsheet
 
-My personal cheatsheet when working with Cloud technologies. Feel free to reuse and adjust it to your needs.
+My personal cheatsheet when working with general Cloud technologies. Feel free to reuse and adjust it to your needs.
 
-1. [CDK CLI](#cdk-cli)
-2. [AWS CLI](#aws-cli)
-3. [Terraform](#terraform)
-4. [Docker](#docker)
-   1. [Docker: General](#docker-general)
-   2. [Docker: Cleanup](#docker-cleanup)
-   3. [Docker: Compose](#docker-compose)
-   4. [Docker: ECR](#docker-ecr)
-5. [Infracost](#infracost)
-6. [Payara App Server](#payara-app-server)
-7. [Other](#other)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-# CDK CLI
+- [Terraform](#terraform)
+- [Docker](#docker)
+  - [Docker: General](#docker-general)
+  - [Docker: Cleanup](#docker-cleanup)
+  - [Docker: Compose](#docker-compose)
+  - [Docker: ECR](#docker-ecr)
+- [Infracost](#infracost)
 
-| Description                                                                  | Command                                         |
-| :--------------------------------------------------------------------------- | :---------------------------------------------- |
-| Create new project in typescript                                             | `cdk init -l typescript`                        |
-| Compile CDK code -> CloudFormation templates                                 | `cdk synth`                                     |
-| Deploy                                                                       | `cdk deploy`                                    |
-| Deploy a specific stack                                                      | `cdk deploy [STACK-NAME]`                       |
-| Delete all resources created by cdk                                          | `cdk destroy`                                   |
-| Bootstrap your account (first time or after activating features in cdk.json) | `cdk bootstrap aws://[ACCOUNT-NUMBER]/[REGION]` |
-| List all available stacks                                                    | `cdk list`                                      |
-
-# AWS CLI
-
-| Description                             | Command                                                                                                             |
-| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
-| Upload file to S3                       | `aws s3 cp [file] s3://[bucket-name]`                                                                               |
-| List all entries from a Dynamo DB table | `aws dynamodb scan --table-name [table-name]`                                                                       |
-| Empty S3 Bucket                         | `aws s3 rm --recursive s3://[bucket-name]`                                                                          |
-| Retrieve Secret                         | `aws secretsmanager get-secret-value --secret-id [secret-name] --region [region] --query SecretString --output text | cut -d: -f2 | tr -d \"}` |
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Terraform
 
@@ -84,16 +65,3 @@ My personal cheatsheet when working with Cloud technologies. Feel free to reuse 
 | :-------------------- | :--------------------------------------------------------------------------------- |
 | Create cost breakdown | `infracost breakdown --path=./ --format html --out-file=infracost-breakdown.html`  |
 | Sync usage file       | `infracost breakdown --path=./ --sync-usage-file --usage-file=infracost-usage.yml` |
-
-# Payara App Server
-| Description                             | Command                                                                                                               |
-| :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
-| Add AWS Secret to Payara config         | `asadmin set-aws-config-source-configuration --dynamic true --enabled true --secretName [name] --regionName [region]` |
-| Retrieve AWS secret value               | `asadmin get-config-property --source cloud --sourceName aws --propertyName [key-of-aws-secret]`                      |
-| Retrieve all AWS secrets used in Payara | `asadmin get-aws-config-source-configuration`                                                                         |
-
-# Other
-
-| Description                                  | Command                                              |
-| :------------------------------------------- | :--------------------------------------------------- |
-| pem to ppk key for putty EC2 instance access | `puttygen ~/k8s-key.pem -o ~/k8s-key.ppk -O private` |

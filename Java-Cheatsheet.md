@@ -1,9 +1,15 @@
-# Cloud Cheatsheet <!-- omit in toc -->
+# Cloud Cheatsheet
 
 My personal cheatsheet when programming Java projects. Feel free to reuse and adjust it to your needs.
 
-1. [Maven](#maven)
-2. [Payara](#payara)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Maven](#maven)
+- [Payara](#payara)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Maven
 | Description                              | Command                  |

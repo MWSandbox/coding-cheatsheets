@@ -1,0 +1,18 @@
+name: Generate overall Cheatsheet
+run-name: ${{ github.actor }} pushed changes - re-generating overall Cheatsheet
+on: [push]
+jobs:
+  Generate-Overall-Cheatsheet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out repository
+        uses: actions/checkout@v2
+      - name: Generating overall Cheatsheet
+        shell: bash
+        run: ./.github/scripts/generate-overall-cheatsheet.sh
+      - name: Generating tocs
+        uses: technote-space/toc-generator@v4
+        with:
+          COMMIT_MESSAGE: "Re-generated tocs and overall cheatsheet"
+          TARGET_PATHS: AWS-Cheatsheet.md,Azure-Cheatsheet.md,Cloud-Cheatsheet.md,Java-Cheatsheet.md,Kubernetes-Cheatsheet.md,Linux-Cheatsheet.md,Overall-Cheatsheet.md
+      - run: echo "This job's status is ${{ job.status }}."
