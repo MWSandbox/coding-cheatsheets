@@ -1,6 +1,6 @@
 #!/bin/bash
 
-section_start_line_number=$(echo "$(<./../../${CHEATSHEET}-Cheatsheet.md)" | grep -wn "# ${SECTION}" | cut -d: -f1)
+section_start_line_number=$(echo "$(<./${CHEATSHEET}-Cheatsheet.md)" | grep -wn "# ${SECTION}" | cut -d: -f1)
 command_line_number=$((section_start_line_number + 4))
 
 if [[( "$section_line_number" == 0 ) || -z "$section_line_number" ]]; then 

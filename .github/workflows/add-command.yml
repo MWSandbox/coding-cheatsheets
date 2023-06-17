@@ -2,7 +2,7 @@ name: Add new command to docs
 run-name: ${{ github.actor }} is adding new command to docs
 on: 
   issues:
-    types: [opened, edited, labeled]
+    types: [opened, edited]
 jobs:
   Add-New-Command:
     if: contains(github.event.issue.labels.*.name, 'add-command')
