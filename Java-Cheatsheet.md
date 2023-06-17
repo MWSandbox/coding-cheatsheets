@@ -6,9 +6,8 @@ My personal cheatsheet when programming Java projects. Feel free to reuse and ad
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-1. [Java Cheatsheet](#java-cheatsheet)
-2. [Maven](#maven)
-3. [Payara](#payara)
+- [Maven](#maven)
+- [Payara](#payara)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
