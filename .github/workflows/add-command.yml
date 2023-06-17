@@ -1,0 +1,29 @@
+name: Add new command to docs
+run-name: ${{ github.actor }} is adding new command to docs
+on: 
+  issues:
+    types: [opened, edited, labeled]
+jobs:
+  Add-New-Command:
+    if: contains(github.event.issue.labels.*.name, 'add-command')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out repository
+        uses: actions/checkout@v2
+      - name: Extracting issue values
+        shell: bash
+        run: ./.github/scripts/extract-issue-values.sh
+        env: 
+          ISSUE_DESC: ${{ github.event.issue.body }}
+      - name: Writing extracted values to ${{ env.CHEATSHEET }} cheatsheet
+        shell: bash
+        run: ./.github/scripts/write-command-to-cheatsheet.sh
+      - name: Commiting new command to repo
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: New ${{ env.CHEATSHEET }} command.
+      - name: Closing issue
+        run: gh issue close ${{ github.event.issue.number }} -c "Command added to docs by Github action." -r completed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "This job's status is ${{ job.status }}."
