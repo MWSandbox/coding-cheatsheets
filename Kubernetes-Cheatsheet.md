@@ -13,6 +13,7 @@
 
 | Description                                              | Command                                                      |
 | :------------------------------------------------------- | :----------------------------------------------------------- |
+| List all pods from all namespaces |  |
 | Set current config                                       | `kubectl config use-context [context-name]`                  |
 | Get user from config                                     | `kubectl config view --minify --flatten                      | grep user` |
 | Check if current user has permissions to execute command | `kubectl auth can-i [command]`                               |
