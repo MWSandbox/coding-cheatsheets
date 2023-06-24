@@ -20,6 +20,7 @@ My personal cheatsheet when working with general Cloud technologies. Feel free t
 
 | Description                                                               | Command             |
 | :------------------------------------------------------------------------ | :------------------ |
+| Moves resources in terraform state. Can be used if module path changes. | `terraform state mv [OLD-PATH] [NEW-PATH]` |
 | Sets up working directory, downloads plugins. Safe to run multiple times. | `terraform init`    |
 | Create execution plan for rollout                                         | `terraform plan`    |
 | Deploys changes                                                           | `terraform apply`   |
