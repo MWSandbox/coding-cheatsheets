@@ -13,6 +13,7 @@
 
 | Description                                              | Command                                                      |
 | :------------------------------------------------------- | :----------------------------------------------------------- |
+| Follow logs of pod | `kubectl logs -f [POD]` |
 | List all pods from all namespaces | `kubectl get pod -o=custom-columns=NAME:.metadata.name,STATUS:.status.phase,NODE:.spec.nodeName --all-namespaces` |
 | Set current config                                       | `kubectl config use-context [context-name]`                  |
 | Get user from config                                     | `kubectl config view --minify --flatten \| grep user` |
