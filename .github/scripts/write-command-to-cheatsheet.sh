@@ -9,4 +9,4 @@ if [[ -z "$section_line_number" ]]; then
   exit 1
 fi
 
-sed -i "${command_line_number}i | ${DESC} | `${COMMAND}` |" "./${CHEATSHEET}-Cheatsheet.md"
+sed -i "${command_line_number}i | ${DESC} | \`${COMMAND}\` |" "./${CHEATSHEET}-Cheatsheet.md"

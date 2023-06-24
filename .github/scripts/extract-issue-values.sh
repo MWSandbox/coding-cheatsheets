@@ -12,6 +12,10 @@ section=$(extract_value '\{SECTION\}' '\{\/SECTION\}')
 command=$(extract_value '\{COMMAND\}' '\{\/COMMAND\}')
 desc=$(extract_value '\{DESC\}' '\{\/DESC\}')
 
+#escape | in command string
+command="${command//|/\\|}"
+echo $command
+
 echo "################### EXTRACTED VALUES ###################"
 echo "Cheatsheet: ${cheatsheet}."
 echo "Section: ${section}."
