@@ -49,3 +49,5 @@
 
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
+| Retrieves kubeconfig for EKS cluster | `aws eks update-kubeconfig --profile [AWS-PROFILE] --region [REGION] --name [CLUSTER-NAME]`|
+
