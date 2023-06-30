@@ -39,6 +39,7 @@
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
 
+| Get all identitymappings enabled for the cluster | `eksctl get iamidentitymapping --cluster [CLUSTER-NAME] --region=[REGION]` |
 # AWS CLI
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
