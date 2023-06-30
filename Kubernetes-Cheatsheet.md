@@ -27,3 +27,15 @@
 | :---------------------------------- | :-------------------------------------------- |
 | Login using Azure AD integration    | `kubelogin convert-kubeconfig -l interactive` |
 | Remove cached tokens from kubelogin | `kubelogin remove-tokens`                     |
+
+# Azure CLI
+| Description                         | Command                                       |
+| :---------------------------------- | :-------------------------------------------- |
+
+# eksctl
+| Description                         | Command                                       |
+| :---------------------------------- | :-------------------------------------------- |
+
+# AWS CLI
+| Description                         | Command                                       |
+| :---------------------------------- | :-------------------------------------------- |
