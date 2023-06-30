@@ -6,6 +6,9 @@
 
 - [kubectl](#kubectl)
 - [Azure kubelogin](#azure-kubelogin)
+- [Azure CLI](#azure-cli)
+- [eksctl](#eksctl)
+- [AWS CLI](#aws-cli)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
