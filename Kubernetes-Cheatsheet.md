@@ -41,6 +41,7 @@
 
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
+| Enables a new identity access to the cluster using a specific role | `eksctl create iamidentitymapping --cluster [CLUSTER-NAME] --region=[REGION] --arn [AWS-ROLE-ARN] --username [K8S-ROLE-NAME] --group [K8S-GROUP-NAME] [--no-duplicate-arns]` |
 | Get all identitymappings enabled for the cluster | `eksctl get iamidentitymapping --cluster [CLUSTER-NAME] --region=[REGION]` |
 
 # AWS CLI
