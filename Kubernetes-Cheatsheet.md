@@ -36,6 +36,7 @@
 
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
+| Retrieves kubeconfig for AKS cluster | `az aks get-credentials --overwrite-existing --resource-group [RG] --name [CLUSTER-NAME]` |
 
 # eksctl
 
