@@ -26,20 +26,24 @@
 | Get clusterrolebinding                                   | `kubectl get clusterrolebinding [role-binding-name] -o json` |
 
 # Azure kubelogin
+
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
 | Login using Azure AD integration    | `kubelogin convert-kubeconfig -l interactive` |
 | Remove cached tokens from kubelogin | `kubelogin remove-tokens`                     |
 
 # Azure CLI
+
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
 
 # eksctl
+
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
-
 | Get all identitymappings enabled for the cluster | `eksctl get iamidentitymapping --cluster [CLUSTER-NAME] --region=[REGION]` |
+
 # AWS CLI
+
 | Description                         | Command                                       |
 | :---------------------------------- | :-------------------------------------------- |
