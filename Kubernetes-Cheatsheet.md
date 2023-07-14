@@ -16,6 +16,7 @@
 
 | Description                                              | Command                                                      |
 | :------------------------------------------------------- | :----------------------------------------------------------- |
+| Get pods | `kubectl get pods` |
 | Open bash in container | `kubectl exec --stdin --tty [POD] -- /bin/bash` |
 | Follow logs of pod | `kubectl logs -f [POD]` |
 | List all pods from all namespaces | `kubectl get pod -o=custom-columns=NAME:.metadata.name,STATUS:.status.phase,NODE:.spec.nodeName --all-namespaces` |
