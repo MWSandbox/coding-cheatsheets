@@ -14,6 +14,7 @@ My personal cheatsheet when working with Azure. Feel free to reuse and adjust it
 
 | Description                  | Command                                                                         |
 | :--------------------------- | :------------------------------------------------------------------------------ |
+| Breaks a lease (e.g.) when terraform hung up on a file in blob storage | `az storage blob lease break --blob-name [file-name] --container-name [container] --account-name [account] --auth-mode login` |
 | Retrieves value of keyvault secret | `az keyvault secret show --vault-name [VAULT-NAME] --name [SECRET-NAME] --query value -o tsv` |
 | Retrieve kubeconfig of an AKS cluster | `az aks get-credentials --resource-group [RG] --name [CLUSTER-NAME]` |
 | Login                        | `az login`                                                                      |
