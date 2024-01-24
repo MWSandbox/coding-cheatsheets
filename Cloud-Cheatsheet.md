@@ -21,7 +21,7 @@ My personal cheatsheet when working with general Cloud technologies. Feel free t
 | Description                                                               | Command             |
 | :------------------------------------------------------------------------ | :------------------ |
 | Lists content of terraform state. | `terraform state list` |
-| Imports an existing cloud resource by ID into the terraform state to be managed by terraform in the future. | `terraform state import [RESOURCE-PATH] [ID]` |
+| Imports an existing cloud resource by ID into the terraform state to be managed by terraform in the future. | `terraform import [RESOURCE-PATH] [ID]` |
 | Moves resources in terraform state. Can be used if module path changes. | `terraform state mv [OLD-PATH] [NEW-PATH]` |
 | Sets up working directory, downloads plugins. Safe to run multiple times. | `terraform init`    |
 | Create execution plan for rollout                                         | `terraform plan`    |
