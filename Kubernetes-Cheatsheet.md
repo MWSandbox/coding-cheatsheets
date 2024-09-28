@@ -4,11 +4,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [kubectl](#kubectl)
-- [Azure kubelogin](#azure-kubelogin)
-- [Azure CLI](#azure-cli)
-- [eksctl](#eksctl)
-- [AWS CLI](#aws-cli)
+1. [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
+2. [kubectl](#kubectl)
+3. [Azure kubelogin](#azure-kubelogin)
+4. [Azure CLI](#azure-cli)
+5. [eksctl](#eksctl)
+6. [AWS CLI](#aws-cli)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -25,6 +26,8 @@
 | Check if current user has permissions to execute command | `kubectl auth can-i [command]`                               |
 | Check permissions                                        | `kubectl auth can-i --list`                                  |
 | Get clusterrolebinding                                   | `kubectl get clusterrolebinding [role-binding-name] -o json` |
+| Restart Deployment | `kubectl rollout restart deployment [deployment]` |
+| Port Forward a service locally | `kubectl port-forward svc/[service-name] [local-port]:[k8s-port]`
 
 # Azure kubelogin
 
