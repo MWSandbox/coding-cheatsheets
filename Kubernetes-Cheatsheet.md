@@ -4,12 +4,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-1. [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
-2. [kubectl](#kubectl)
-3. [Azure kubelogin](#azure-kubelogin)
-4. [Azure CLI](#azure-cli)
-5. [eksctl](#eksctl)
-6. [AWS CLI](#aws-cli)
+- [kubectl](#kubectl)
+- [Azure kubelogin](#azure-kubelogin)
+- [Azure CLI](#azure-cli)
+- [eksctl](#eksctl)
+- [AWS CLI](#aws-cli)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
