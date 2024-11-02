@@ -59,5 +59,8 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 | Undo | `u` |
 | Redo | `<C-r>` |
 | Telescope help | `help telescope` |
-| nvim tree hel | `g?` |
+| nvim tree help | `g?` |
 | Open terminal | `term` |
+| Replace in current line | `s/to-replace/replacement` |
+| Replace all occurences in whole file | `%s/to-replace/replacement/g` |
+| Git diff (vim-fugitive) | `Gdiffsplit` |
