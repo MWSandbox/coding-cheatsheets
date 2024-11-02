@@ -34,3 +34,30 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 | Search             | `/`     |
 | Next Search Result | `n`     |
 | Delete Line        | `dd`    |
+| Show runtime       | `h rtp  |
+| Execute lua file   | `luafile % |
+| Source file        | `so %`  |
+| Create file        | `%`     |
+| Create dir         | `d`     |
+| Explore            | `Ex`    |
+| Open package manger | `PackerSync` |
+| Align in visual mode | `=` |
+| Copy in visual mode | `y` |
+| Paste in visual mode | `p` |
+| Switch between windows `CTRL + W` |
+| Show all lsp configs | `help lspconfig-all` |
+| Show mason packages | `Mason` |
+| Jump to end of file | `G` |
+| Jump to end of line | `$` |
+| Jump to start of line | `0` |
+| Jump to start of file | `gg` |
+| Jump to end of word | `e` |
+| Append | `A` |
+| Delete word | `dw` |
+| Delete until end of ... | `d$` `de` |
+| Delete line | `dd` |
+| Undo | `u` |
+| Redo | `<C-r>` |
+| Telescope help | `help telescope` |
+| nvim tree hel | `g?` |
+| Open terminal | `term` |

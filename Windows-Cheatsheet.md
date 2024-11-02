@@ -12,3 +12,5 @@ My personal cheatsheet when working with Windows. Feel free to reuse and adjust 
 | Description                                 | Command                            |
 | :------------------------------------------ | :--------------------------------- |
 | Adds a new Firewall Rule to allow traffic from given protocol (e.g. ICMPv4) | `New-NetFirewallRule -DisplayName "[rule-name]" -Protocol [procol-name]` |
+| Allow IP forwarding | `Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters -Name IpEnableRouter -Value 1` |
+
