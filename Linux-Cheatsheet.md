@@ -9,6 +9,7 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 - [Linux Package Manager](#linux-package-manager)
 - [General Linux commands](#general-linux-commands)
 - [VI](#vi)
+- [Networking](#networking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
