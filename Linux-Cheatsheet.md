@@ -65,6 +65,7 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 | Replace in current line | `s/to-replace/replacement` |
 | Replace all occurences in whole file | `%s/to-replace/replacement/g` |
 | Git diff (vim-fugitive) | `Gdiffsplit` |
+| LSP info | `LspInfo` |
 
 # Networking
 | Scan IP range for active devices | `nmap -sn CIDR` |
