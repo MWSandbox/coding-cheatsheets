@@ -54,3 +54,11 @@
 | :---------------------------------- | :-------------------------------------------- |
 | Retrieves kubeconfig for EKS cluster | `aws eks update-kubeconfig --profile [AWS-PROFILE] --region [REGION] --name [CLUSTER-NAME]`|
 
+# MicroK8s
+
+| Description                         | Command                                       |
+| :---------------------------------- | :-------------------------------------------- |
+| Start | `microk8s.start` |
+| Inspect | `microk8s.inspect` |
+| Stop | `microk8s.stop` |
+
