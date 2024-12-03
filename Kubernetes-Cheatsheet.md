@@ -62,4 +62,7 @@
 | Start | `microk8s.start` |
 | Inspect | `microk8s.inspect` |
 | Stop | `microk8s.stop` |
+| Add main node | `microk8s.add-node` |
+| Add leaf node | `microk8s.join [IP]:[PORT]/[TOKEN]` |
+| Generate kube config | `microk8s config` |
 
