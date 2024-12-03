@@ -9,6 +9,7 @@
 - [Azure CLI](#azure-cli)
 - [eksctl](#eksctl)
 - [AWS CLI](#aws-cli)
+- [MicroK8s](#microk8s)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
