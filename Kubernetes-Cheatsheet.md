@@ -27,7 +27,8 @@
 | Check permissions                                        | `kubectl auth can-i --list`                                  |
 | Get clusterrolebinding                                   | `kubectl get clusterrolebinding [role-binding-name] -o json` |
 | Restart Deployment | `kubectl rollout restart deployment [deployment]` |
-| Port Forward a service locally | `kubectl port-forward svc/[service-name] [local-port]:[k8s-port]`
+| Port Forward a service locally | `kubectl port-forward svc/[service-name] [local-port]:[k8s-port]` |
+| Retrieve secret value | `kubectl get secrets/[NAME] --template={{.data[.PATH]}} \| base64 -d` |
 
 # Azure kubelogin
 
@@ -66,3 +67,8 @@
 | Add leaf node | `microk8s.join [IP]:[PORT]/[TOKEN]` |
 | Generate kube config | `microk8s config` |
 
+# helm
+
+| Description | Command |
+| :---------- | :------ |
+| Render helm chart | `helm template [name] [chart] -f [values.yaml]` |
