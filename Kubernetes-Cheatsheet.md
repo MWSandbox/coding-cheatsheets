@@ -10,6 +10,7 @@
 - [eksctl](#eksctl)
 - [AWS CLI](#aws-cli)
 - [MicroK8s](#microk8s)
+- [helm](#helm)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
