@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
 - [kubectl](#kubectl)
 - [Azure kubelogin](#azure-kubelogin)
 - [Azure CLI](#azure-cli)
@@ -30,6 +31,7 @@
 | Restart Deployment | `kubectl rollout restart deployment [deployment]` |
 | Port Forward a service locally | `kubectl port-forward svc/[service-name] [local-port]:[k8s-port]` |
 | Retrieve secret value | `kubectl get secrets/[NAME] --template={{.data[.PATH]}} \| base64 -d` |
+| Run network utils shell | `kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot` |
 
 # Azure kubelogin
 
@@ -67,6 +69,7 @@
 | Add main node | `microk8s.add-node` |
 | Add leaf node | `microk8s.join [IP]:[PORT]/[TOKEN]` |
 | Generate kube config | `microk8s config` |
+| Import image | `microk8s ctr image import [IMAGE].tar` |
 
 # helm
 

@@ -6,10 +6,12 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Linux Cheatsheet](#linux-cheatsheet)
 - [Linux Package Manager](#linux-package-manager)
 - [General Linux commands](#general-linux-commands)
 - [VI](#vi)
 - [Networking](#networking)
+- [openssl](#openssl)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -69,3 +71,7 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 
 # Networking
 | Scan IP range for active devices | `nmap -sn CIDR` |
+
+# openssl
+| Decrypt key | `openssl rsa -in encrypted.key -out decrypted.key` |
+| Show Cert chain | `openssl s_client -showcerts -connect [DNS]:443` |
