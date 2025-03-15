@@ -4,7 +4,6 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
 - [kubectl](#kubectl)
 - [Azure kubelogin](#azure-kubelogin)
 - [Azure CLI](#azure-cli)
