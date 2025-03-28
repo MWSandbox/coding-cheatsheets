@@ -11,6 +11,7 @@
 - [AWS CLI](#aws-cli)
 - [MicroK8s](#microk8s)
 - [helm](#helm)
+- [argo-rollouts](#argo-rollouts)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -75,3 +76,10 @@
 | Description | Command |
 | :---------- | :------ |
 | Render helm chart | `helm template [name] [chart] -f [values.yaml]` |
+
+# argo-rollouts
+
+| Description | Command |
+| :---------- | :------ |
+| View rollout | `kubectl argo rollouts get rollout [NAME] -n [NAMESPACE] --watch` |
+| Promote rollout | `kubectl argo rollouts promote rollout [NAME] -n [NAMESPACE]` |
