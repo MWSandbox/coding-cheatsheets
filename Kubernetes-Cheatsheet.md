@@ -33,6 +33,8 @@
 | Retrieve secret value | `kubectl get secrets/[NAME] --template={{.data[.PATH]}} \| base64 -d` |
 | Run network utils shell | `kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot` |
 | Drain a node | `kubectl cordon [node]` |
+| Get all resource types that are not namespace scoped| `kubectl api-resources --namespaced=false` |
+| Get all pods running on a specific node | `kubectl get pods --field-selector spec.nodeName=node2 -A` |
 
 # Azure kubelogin
 
