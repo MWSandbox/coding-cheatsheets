@@ -35,6 +35,8 @@
 | Drain a node | `kubectl cordon [node]` |
 | Get all resource types that are not namespace scoped| `kubectl api-resources --namespaced=false` |
 | Get all pods running on a specific node | `kubectl get pods --field-selector spec.nodeName=node2 -A` |
+| Run ephemeral container on existing pod with process sharing | `kubectl debug -it [POD] --image=busybox:1.28 --target=[CONTAINER]` |
+| Copy pod and add ephemeral container for debugging | `kubectl debug [POD] -it --image=[IMAGE] --share-processes --copy-to=[DEBUG-POD]` |
 
 # Azure kubelogin
 
