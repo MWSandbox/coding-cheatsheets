@@ -5,6 +5,7 @@
 **Table of Contents**
 
 - [kubectl](#kubectl)
+  - [Deployments](#deployments)
 - [Azure kubelogin](#azure-kubelogin)
 - [Azure CLI](#azure-cli)
 - [eksctl](#eksctl)
