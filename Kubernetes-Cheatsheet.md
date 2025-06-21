@@ -28,7 +28,6 @@
 | Check if current user has permissions to execute command | `kubectl auth can-i [command]`                               |
 | Check permissions                                        | `kubectl auth can-i --list`                                  |
 | Get clusterrolebinding                                   | `kubectl get clusterrolebinding [role-binding-name] -o json` |
-| Restart Deployment | `kubectl rollout restart deployment [deployment]` |
 | Port Forward a service locally | `kubectl port-forward svc/[service-name] [local-port]:[k8s-port]` |
 | Retrieve secret value | `kubectl get secrets/[NAME] --template={{.data[.PATH]}} \| base64 -d` |
 | Run network utils shell | `kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot` |
@@ -37,6 +36,20 @@
 | Get all pods running on a specific node | `kubectl get pods --field-selector spec.nodeName=node2 -A` |
 | Run ephemeral container on existing pod with process sharing | `kubectl debug -it [POD] --image=busybox:1.28 --target=[CONTAINER]` |
 | Copy pod and add ephemeral container for debugging | `kubectl debug [POD] -it --image=[IMAGE] --share-processes --copy-to=[DEBUG-POD]` |
+
+
+## Deployments
+
+| Description                                              | Command                                                      |
+| :------------------------------------------------------- | :----------------------------------------------------------- |
+| Restart Deployment | `kubectl rollout restart deployment [deployment]` |
+| Get rollout status of a deployment | `kubectl rollout status deployment/[DEPLOYMENT]` |
+| View deployment revision history | `kubectl rollout history deployment/[DEPLOYMENT]` |
+| Undo current rollout of deployment | `kubectl rollout undo deployment/[DEPLOYMENT]` |
+| Rollback to deployment revision | `kubectl rollout undo deployment/[DEPLOYMENT] --to-revision=[REVISION]` |
+| Scale a deployment | `kubectl scale deployment/[DEPLOYMENT] --replicas=[COUNT]` |
+| Pause a rollout | `kubectl rollout pause deployment/[DEPLOYMENT]` |
+| Resume a rollout | `kubectl rollout resume deployment/[DEPLOYMENT]` |
 
 # Azure kubelogin
 

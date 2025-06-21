@@ -69,7 +69,11 @@ My personal cheatsheet when working with Linux. Feel free to reuse and adjust it
 | LSP info | `LspInfo` |
 
 # Networking
+
+| Description        | Command |
+| :----------------- | :------ |
 | Scan IP range for active devices | `nmap -sn CIDR` |
+| Show all iptable rules for kube-proxy | `sudo iptables-legacy -t nat -S \| grep KUBE` |
 
 # openssl
 | Decrypt key | `openssl rsa -in encrypted.key -out decrypted.key` |
